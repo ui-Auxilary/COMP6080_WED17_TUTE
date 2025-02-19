@@ -1,15 +1,43 @@
 <html>
-<head>
-	<title>Box</title>
-	<style type="text/css">
-		.box {
-			
-		}
-	</style>
-</head>
-<body>
-	<div class="box">
+  <head>
+    <title>Box</title>
+    <style type="text/css">
+      /* CSS reset */
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .box {
+        width: 200px;
+        height: 300px;
+        padding: 3px;
+        border: 1px solid #333333;
+        background-color: rgb(255, 255, 0);
+        margin: 10px;
+        padding: 50px;
+      }
 
-	</div>
-</body>
+      /* Use # for id, and . to select classes */
+      #cool-box {
+        width: 200px;
+        height: 300px;
+        padding: 3px;
+        border: 1px solid #333333;
+        background-color: red;
+        margin: 10px;
+        padding: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box-container">
+      <div class="box">
+        <p>Hello world</p>
+      </div>
+      <div class="box">
+        <p>Box2</p>
+      </div>
+    </div>
+  </body>
 </html>

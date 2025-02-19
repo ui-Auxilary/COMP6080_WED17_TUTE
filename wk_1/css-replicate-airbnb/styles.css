@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "Circular";
+  src: url("./assets/circular.ttf");
+}
+
+.top_block {
+  margin-bottom: 60px;
+}
+
+body {
+  font-family: "Circular";
+}
+
+li {
+  list-style: none;
+}
+
+h2 {
+  letter-spacing: 10px;
+  line-height: 20px;
+  font-size: 50px;
+}
+
+.btn {
+  width: 85px;
+  height: 40px;
+  border: 1px solid teal;
+  border-radius: 5px;
+  font-family: "Circular";
+  font-weight: bold;
+}
+
+.btn-teal {
+  background-color: teal;
+}
+
+.btn-txt-teal {
+  color: teal;
+}
+
+.btn-txt-white {
+  color: white;
+}
+
+#article-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
