@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image layout</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .icons {
+        display: flex;
+        justify-content: space-evenly;
+        width: 20%;
+      }
+
+      .icon {
+        height: 50%;
+      }
+
+      #container {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5px 60px;
+      }
+
+      #content {
+        margin: 0px 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      #gallery {
+        display: grid;
+        grid-template-columns: repeat(4, 320px);
+        grid-template-rows: repeat(3, 200px);
+        grid-template-areas:
+          "img1 img2 img3 img4"
+          "img5 img2 img3 img6"
+          "img5 img7 img8 img9";
+        height: 1000px;
+        width: 100%;
+        column-gap: 5px;
+        row-gap: 5px;
+        margin-top: 30px;
+        justify-content: center;
+      }
+
+      #area_1 {
+        grid-area: img1;
+        background: url("./assets/exercise_3_img_0.jpg") no-repeat;
+      }
+
+      #area_2 {
+        grid-area: img2;
+        background: url("./assets/exercise_3_img_1.jpg") no-repeat;
+      }
+
+      #area_3 {
+        grid-area: img3;
+        background: url("./assets/exercise_3_img_2.jpg") no-repeat;
+      }
+
+      #area_4 {
+        grid-area: img4;
+        background: url("./assets/exercise_3_img_3.jpg") no-repeat;
+      }
+
+      #area_5 {
+        grid-area: img5;
+        background: url("./assets/exercise_3_img_4.jpg") no-repeat;
+      }
+
+      #area_6 {
+        grid-area: img6;
+        background: url("./assets/exercise_3_img_5.jpg") no-repeat;
+      }
+
+      #area_7 {
+        grid-area: img7;
+        background: url("./assets/exercise_3_img_6.jpg") no-repeat;
+      }
+
+      #area_8 {
+        grid-area: img8;
+        background: url("./assets/exercise_3_img_7.jpg") no-repeat;
+      }
+
+      #area_9 {
+        grid-area: img9;
+        background: url("./assets/exercise_3_img_8.jpg") no-repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <main id="container">
+      <section id="content">
+        <h1>Florida bungalow</h1>
+        <h3>MIAMI PROPER // FLORIDA</h3>
+        <div class="icons">
+          <img class="icon" src="assets/exercise_3_fb_icon.png" />
+          <img class="icon" src="assets/exercise_3_twitter_icon.png" />
+          <img class="icon" src="assets/exercise_3_pinterest_icon.png" />
+        </div>
+        <h4>The final destination, Miami, Florida!</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam tenetur
+          voluptas iusto autem animi, necessitatibus harum corporis enim veniam
+          libero vero cupiditate repellendus illo eveniet. Voluptas laboriosam
+          unde ullam amet ad, earum veritatis maiores voluptatibus tempora rem
+          reiciendis totam. Aspernatur, itaque, at similique eius laboriosam
+          cupiditate odit porro saepe nisi maxime modi nulla asperiores magnam
+          voluptatem numquam voluptas est sed voluptatibus animi ab nemo vel
+          tenetur nam dolorem. Vero deserunt quisquam asperiores, itaque maxime
+          suscipit eos possimus sequi molestiae deleniti cum earum sapiente
+          dicta iure ipsam assumenda accusamus nesciunt? Cupiditate vitae esse
+          molestiae! Unde hic tempore illum adipisci consectetur tempora quas
+          tenetur fuga. Ut magni recusandae dignissimos veniam odit, soluta
+          possimus aut. Natus quis deleniti inventore atque recusandae
+          laudantium perspiciatis at, repellat vero.
+        </p>
+      </section>
+      <section id="gallery">
+        <div id="area_1"></div>
+        <div id="area_2"></div>
+        <div id="area_3"></div>
+        <div id="area_4"></div>
+        <div id="area_5"></div>
+        <div id="area_6"></div>
+        <div id="area_7"></div>
+        <div id="area_8"></div>
+        <div id="area_9"></div>
+      </section>
+    </main>
+  </body>
+</html>

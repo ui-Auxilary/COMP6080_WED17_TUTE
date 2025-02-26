@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom positioning</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      .bg {
+        background-color: blue;
+        width: 500px;
+        height: 500px;
+      }
+
+      .circle {
+        width: 100px;
+        height: 100px;
+        background-color: white;
+        border-radius: 50%;
+        right: 30px;
+        top: 50px;
+      }
+
+      .notification {
+        background-color: red;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="bg">
+      <div class="circle">
+         <div class="notification"></div>
+       
+        </div>
+      </div>
+      
+    </main>
+  </body>
+</html>
