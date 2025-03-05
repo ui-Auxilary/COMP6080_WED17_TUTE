@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer</title>
+    <style>
+      .wrapper {
+        display: flex;
+        gap: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="timer">
+      <p id="counter">0</p>
+      <div class="wrapper">
+        <button id="increment">Increment</button>
+        <button>Decrement</button>
+      </div>
+    </div>
+
+    <script>
+      let count = 0;
+      let counter = document.querySelector("#counter");
+      let incrementBtn = document.getElementById("increment");
+
+      const increment = () => {
+        count += 1;
+        counter.value = 2;
+      };
+
+      // Event listeners
+      // Click, focus
+      incrementBtn.addEventListener("click", increment);
+    </script>
+  </body>
+</html>

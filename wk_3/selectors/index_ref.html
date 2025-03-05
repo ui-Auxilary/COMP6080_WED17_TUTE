@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selectors</title>
+    <style>
+      .red {
+        color: red;
+      }
+
+      /* .section1 > p {
+        font-size: 50px;
+      } 
+
+      /* 
+      .section1 + p {
+        color: yellow;
+      }
+
+      .section1 > p:hover {
+        color: blue;
+        transition: 1s ease-in;
+        transform: translateX(-100px);
+      } */
+
+      /* Active link */
+      /* 
+      a:active {
+        color: red;
+        font-size: 20px;
+      } */
+
+      /* p ~ span {
+        color: yellow;
+      } */
+    </style>
+  </head>
+  <body>
+    <p>Don't modify me!</p>
+    <section class="section1">
+      <p class="red">1</p>
+      <p class="red">2</p>
+      <p class="red">3</p>
+      <p class="red">4</p>
+      <p class="red">5</p>
+      <p>6</p>
+      <a href="#">Link</a>
+      <span>Text</span>
+    </section>
+    <p>Sibling</p>
+  </body>
+</html>
